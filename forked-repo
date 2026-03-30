@@ -1,4 +1,8 @@
 # Task 1: Fork the repository
 
-theia@theia-jchaume:/home/project$ curl -s https://api.github.com/repos/jchaume/mcino-Introduction-to-Git-and-GitHub | jq -r '.parent.clone_url'
-https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub.git
+theia@theia-jchaume:/home/project$ curl -s https://api.github.com/repos/jchaume/mcino-Introduction-to-Git-and-GitHub | jq '.parent | {full_name, html_url}'
+{
+  "full_name": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
+  "html_url": "https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub"
+}
+theia@theia-jchaume:/home/project$ 
