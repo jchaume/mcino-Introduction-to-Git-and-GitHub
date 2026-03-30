@@ -1,0 +1,6 @@
+# Task 4: Check the status of your branches
+
+theia@theia-jchaume:/home/project/mcino-Introduction-to-Git-and-GitHub$ git branch -vv
+* bug-fix-revert c340784 Revert "README.md updated with correct date"
+  bug-fix-typo   ac8df28 README.md updated with correct date
+  main           ac8df28 [origin/main: ahead 1] README.md updated with correct date
