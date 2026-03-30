@@ -1,4 +1,9 @@
 # Task 3: Revert the typo and submit a pull request
 
-theia@theia-jchaume:/home/project/mcino-Introduction-to-Git-and-GitHub$ curl -s https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/6500 | jq -r '.head.repo.clone_url'
-https://github.com/jchaume/mcino-Introduction-to-Git-and-GitHub.git
+theia@theia-jchaume:/home/project$ curl -s https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/6500 | jq '{title, state, user: .user.login, head_repo: .head.repo.full_name}'
+{
+  "title": "Final Project - Task 3. Point 5. Pull request to original repository",
+  "state": "closed",
+  "user": "jchaume",
+  "head_repo": "jchaume/mcino-Introduction-to-Git-and-GitHub"
+}
